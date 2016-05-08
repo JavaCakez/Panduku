@@ -1,13 +1,13 @@
 var path = require('path');
 var webpack = require('webpack');
- 
+
 module.exports = {
-  entry: './index.js',
+  entry: './javascripts/index.js',
   output: { path: __dirname, filename: 'bundle.js' },
   module: {
     loaders: [
       {
-        test: /.jsx?$/,
+        test: /.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
